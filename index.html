@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".paragraph").hide();
+            });
+        });
+
+        $('#header > ul >  li').removeClass('active');
+        $('#header > ul > li#list').addClass('active');
+
+        $(document).ready(function(){
+            $(".list li").click( function() {
+                $(".list li").css("color", "black");
+                $(this).css("color", "blue");
+            });
+
+        });
+
+        $(document).ready(function(){
+            $("h5").click( function() {
+                $("h5").css("color", "black");
+                $(".response").css("color", "blue");
+            });
+
+            $(document).ready(function(){
+                $("h2").click( function() {
+                    $("h2").css("color", "black");
+                    $("h2").css("color", "red");
+                });
+            });
+
+            $(document).ready(function(){
+                $("h3").click( function() {
+                    $("h3").css("color", "black");
+                    $("h3").css("color", "pink");
+                });
+            });
+        });
+
+
+
+
+    </script>
+</head>
+<body>
+
+<p class="p"><h2>Assignment 7</h2> </p>
+
+<p class="paragraph">Spelman is the number ONE HBCU in the country for a reason! It is a liberal arts school allowing students to become well versed in different topics. I am a mathematics dual degree engineering major and the dual degree program has done a lot for me. I know that upon completion of Spelmnan College I will be well prepared to go to engineering school. The instition is respected globally and that is because it is such an elite and prestigious school. My entire education and college experience here at Spelman has been illustrious.</p>
+<p><h3>Top Spelman Moments</h3></p>
+<h5>Why is Spelman the greatest? [click here]</h5>
+<p class="response">Because it is!!</p>
+
+<div class="list">
+    <ol>
+        <li> ADW </li>
+        <li> Olive Branch </li>
+        <li> Market Fridays </li>
+        <li> Pageants </li>
+    </ol>
+</div>
+
+
+<button>Hide Paragraphs</button>
+
+
+
+</body>
+</html>
